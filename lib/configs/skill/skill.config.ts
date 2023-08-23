@@ -16,16 +16,16 @@ export const skills: Skill[] = [
     logo: "/logos/nextjs.png",
     link: "https://nextjs.org/"
   },
-  // {
-  //   name: "Svelte",
-  //   logo: "/logos/svelte.png",
-  //   link: "https://svelte.dev/"
-  // },
-  // {
-  //   name: "SvelteKit",
-  //   logo: "/logos/svelte.png",
-  //   link: "https://kit.svelte.dev/"
-  // },
+  {
+    name: "Svelte",
+    logo: "/logos/svelte.png",
+    link: "https://svelte.dev/"
+  },
+  {
+    name: "SvelteKit",
+    logo: "/logos/svelte.png",
+    link: "https://kit.svelte.dev/"
+  },
   {
     name: "Tailwind",
     logo: "/logos/tailwind.svg",
