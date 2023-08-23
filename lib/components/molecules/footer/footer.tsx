@@ -11,10 +11,10 @@ export const Footer = (): ReactElement => {
           <h2 className="text-lg text-white-100 font-medium">Follow me</h2>
         </div>
         <div className="flex items-center gap-1">
-          <Link href="/" className="p-2 bg-gray-400 rounded-full">
+          <Link href="https://www.linkedin.com/in/romainsav/" target="_blank" className="p-2 bg-gray-400 rounded-full">
             <FaLinkedinIn className="text-white h-4 w-4" />
           </Link>
-          <Link href="/" className="p-2 bg-gray-400 rounded-full">
+          <Link href="https://github.com/RomainSav" target="_blank" className="p-2 bg-gray-400 rounded-full">
             <FaGithub className="text-white h-4 w-4" />
           </Link>
         </div>
