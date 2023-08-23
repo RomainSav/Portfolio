@@ -1,7 +1,9 @@
 import type { PropsWithChildren, ReactElement } from "react";
+import { Footer } from "@/components/molecules/footer";
 import "@/styles/tailwind.css";
 import "@/styles/font.css";
-import { Footer } from "@/components/molecules/footer";
+
+export { metadata } from "@/configs/metadata";
 
 const Layout = ({ children }: PropsWithChildren): ReactElement => {
   return (
@@ -9,7 +11,7 @@ const Layout = ({ children }: PropsWithChildren): ReactElement => {
       <head />
 
       <body className="bg-gray-100">
-        <div className="max-w-xl mx-auto px-2">
+        <div className="max-w-xl mx-auto px-4">
           {/* Navbar */}
           <div className="bg-gray-200 border border-gray-300 rounded-lg mt-24">
             {children}

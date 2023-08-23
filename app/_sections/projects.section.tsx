@@ -1,4 +1,5 @@
 import { projects } from "@/configs/project/project.config";
+import Link from "next/link";
 import type { ReactElement } from "react";
 
 export const ProjectsSection = (): ReactElement => {
@@ -7,11 +8,11 @@ export const ProjectsSection = (): ReactElement => {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-lg text-white-100 font-medium">Projects</p>
+          <h2 className="text-lg text-white-100 font-medium">Projects</h2>
         </div>
-        <a href="/" className="flex items-center gap-2 px-2 py-2 bg-gray-400 sm:py-0.5 rounded-lg">
+        <Link href="/" className="flex items-center gap-2 px-2 py-2 bg-gray-400 rounded-lg">
           <p className="text-sm text-white font-medium">View all</p>
-        </a>
+        </Link>
       </div>
 
       <div className="grid gap-4 mt-6">

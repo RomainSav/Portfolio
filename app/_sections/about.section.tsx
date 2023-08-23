@@ -16,7 +16,7 @@ export const AboutSection = (): ReactElement => {
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-[2fr_1fr] items-center gap-8 mt-16">
+      <div className="grid sm:grid-cols-[3fr_1fr] items-center gap-8 mt-16">
         <div className="order-2 sm:order-1">
           <h1 className="font-semibold text-white text-3xl text-center sm:text-start">Romain San Vicente</h1>
           <p className="mt-2 text-white-200 text-center sm:text-start">Frontend Developer since 2020. I work with the framework NextJS.</p>
@@ -26,7 +26,7 @@ export const AboutSection = (): ReactElement => {
           )}>Copy Email</button>
         </div>
         <div className={clsx(
-          "order-1 relative justify-self-center bg-white min-w-40 w-40 min-h-40 h-40 rounded-full border border-white",
+          "order-1 relative justify-self-center bg-white min-w-36 w-36 min-h-36 h-36 rounded-full border border-white",
           "sm:order-2 sm:justify-self-end"
         )}>
           <div className="border-8 border-gray-200 w-full h-full rounded-full">

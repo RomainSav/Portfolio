@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactElement } from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
@@ -7,15 +8,15 @@ export const Footer = (): ReactElement => {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
-          <p className="text-lg text-white-100 font-medium">Follow me</p>
+          <h2 className="text-lg text-white-100 font-medium">Follow me</h2>
         </div>
         <div className="flex items-center gap-1">
-          <a href="/" className="p-2 bg-gray-400 rounded-full">
+          <Link href="/" className="p-2 bg-gray-400 rounded-full">
             <FaLinkedinIn className="text-white h-4 w-4" />
-          </a>
-          <a href="/" className="p-2 bg-gray-400 rounded-full">
+          </Link>
+          <Link href="/" className="p-2 bg-gray-400 rounded-full">
             <FaGithub className="text-white h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
