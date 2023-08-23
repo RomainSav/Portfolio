@@ -13,7 +13,7 @@ const Layout = ({ children }: PropsWithChildren): ReactElement => {
       <body className="bg-gray-100">
         <div className="max-w-xl mx-auto px-4">
           {/* Navbar */}
-          <div className="bg-gray-200 border border-gray-300 rounded-lg mt-24">
+          <div className="bg-gray-200 border border-gray-300 rounded-lg mt-24 mb-10">
             {children}
 
             <Footer />
