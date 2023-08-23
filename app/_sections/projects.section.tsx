@@ -19,10 +19,10 @@ export const ProjectsSection = (): ReactElement => {
       <div className="grid gap-4 mt-6">
         {projects.map((project) => (
           <div key={project.name} className="flex items-center gap-4 p-4 bg-gray-400 rounded-lg">
-            <Image src={project.logo} alt={project.name} width={80} height={80} />
+            <Image src={project.logo} alt={project.name} width={70} height={70} />
             <div>
               <p className="text-white text-lg font-medium">{project.name}</p>
-              <p className="text-white-200 text-sm">{project.description}</p>
+              <p className="text-white-200 text-sm line-clamp-2">{project.description}</p>
             </div>
           </div>
         ))}
