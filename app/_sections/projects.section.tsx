@@ -1,7 +1,7 @@
 import { projects } from "@/configs/project/project.config";
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactElement } from "react";
+import { ProjectCard } from "../_components/project-card";
 
 export const ProjectsSection = (): ReactElement => {
   return (
@@ -17,15 +17,7 @@ export const ProjectsSection = (): ReactElement => {
       </div>
 
       <div className="grid gap-4 mt-6">
-        {projects.map((project) => (
-          <div key={project.name} className="flex items-center gap-4 p-4 bg-gray-400 rounded-lg">
-            <Image src={project.logo} alt={project.name} width={70} height={70} />
-            <div>
-              <p className="text-white text-lg font-medium">{project.name}</p>
-              <p className="text-white-200 text-sm line-clamp-2">{project.description}</p>
-            </div>
-          </div>
-        ))}
+        {projects.map((project) => <ProjectCard key={project.title} {...project} />)}
       </div>
     </div>
   );
