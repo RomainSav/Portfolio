@@ -11,7 +11,7 @@ export const ProjectsSection = (): ReactElement => {
           <div className="w-2 h-2 bg-gray-400 rounded-full" />
           <h2 className="text-lg text-white-100 font-medium">Projects</h2>
         </div>
-        <Link href="/" className="flex items-center gap-2 px-2 py-2 bg-gray-400 rounded-lg">
+        <Link href="/projects" className="flex items-center gap-2 px-2 py-2 bg-gray-400 rounded-lg">
           <p className="text-sm text-white font-medium">View all</p>
         </Link>
       </div>
