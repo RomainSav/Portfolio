@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "ts:check": "tsc --noEmit"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -14,7 +16,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
-    "sharp": "^0.32.5"
+    "sharp": "^0.32.5",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "@bluzzi/eslint-config": "^1.1.0",
