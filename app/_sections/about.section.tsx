@@ -1,9 +1,13 @@
+"use client";
+
 import type { ReactElement } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import { Button } from "@/components/atoms/button";
 
 export const AboutSection = (): ReactElement => {
+  const copyEmail = (): void => void navigator.clipboard.writeText("romain.sv@icloud.com");
+
   return (
     <div className="p-6">
       <div className="flex justify-between items-center">
@@ -21,7 +25,7 @@ export const AboutSection = (): ReactElement => {
         <div className="order-2 sm:order-1">
           <h1 className="font-semibold text-white text-3xl text-center sm:text-start">Romain San Vicente</h1>
           <p className="mt-2 text-white-200 text-center sm:text-start">Frontend Developer since 2020. I work with the framework NextJS.</p>
-          <Button>Copy Email</Button>
+          <Button onClick={copyEmail}>Copy Email</Button>
         </div>
         <div className={clsx(
           "order-1 relative justify-self-center bg-white min-w-36 w-36 min-h-36 h-36 rounded-full border border-white",
